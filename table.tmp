@@ -1,0 +1,172 @@
+<div class="col s8 offset-s2">
+                    
+                    <p class="center">
+                        <!-- <img class="responsive-img" src="SomeResults.png" width="80%"> -->
+                        <table class="highlight responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Tools-f<sub>VLM</sub></th>
+                                    <th>LLM-f<sub>E</sub></th>
+                                    <th colspan="3" class="center">Winoground</th>
+                                    <th colspan="3" class="center">EqBen</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Text</th>
+                                    <th>Image</th>
+                                    <th>Group</th>
+                                    <th>Text</th>
+                                    <th>Image</th>
+                                    <th>Group</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Random Chance</td>
+                                    <td>–</td>
+                                    <td>–</td>
+                                    <td>25.0</td>
+                                    <td>25.0</td>
+                                    <td>16.7</td>
+                                    <td>25.0</td>
+                                    <td>25.0</td>
+                                    <td>16.7</td>
+                                </tr>
+                                <tr>
+                                    <td>Human Evaluation</td>
+                                    <td>–</td>
+                                    <td>–</td>
+                                    <td>89.5</td>
+                                    <td>88.5</td>
+                                    <td>85.5</td>
+                                    <td>–</td>
+                                    <td>–</td>
+                                    <td>–</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9" class="center"><strong>End-to-end models</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>CLIPScore [Radford et al., 2021]</td>
+                                    <td>CLIP-L/14</td>
+                                    <td>–</td>
+                                    <td>27.8</td>
+                                    <td>11.5</td>
+                                    <td>7.8</td>
+                                    <td>35.0</td>
+                                    <td>25.0</td>
+                                    <td>25.0</td>
+                                </tr>
+                                <tr>
+                                    <td>BLIP2ITM [Li et al., 2023]</td>
+                                    <td>BLIPv2</td>
+                                    <td>–</td>
+                                    <td>42.8</td>
+                                    <td>22.0</td>
+                                    <td>18.3</td>
+                                    <td>48.6</td>
+                                    <td>43.6</td>
+                                    <td>35.0</td>
+                                </tr>
+                                <tr>
+                                    <td>VQAScore [Lin et al., 2024]</td>
+                                    <td>InstructBLIP</td>
+                                    <td>–</td>
+                                    <td>44.5</td>
+                                    <td>42.8</td>
+                                    <td>28.5</td>
+                                    <td>49.3</td>
+                                    <td>58.6</td>
+                                    <td>38.6</td>
+                                </tr>
+                                <tr>
+                                    <td>VQAScore [Lin et al., 2024]</td>
+                                    <td>LLaVA-1.5</td>
+                                    <td>–</td>
+                                    <td>45.5</td>
+                                    <td>41.3</td>
+                                    <td>29.8</td>
+                                    <td>45.0</td>
+                                    <td>47.1</td>
+                                    <td>28.6</td>
+                                </tr>
+                                <tr>
+                                    <td>VQAScore [Lin et al., 2024]</td>
+                                    <td>LLaVA-1.6</td>
+                                    <td>–</td>
+                                    <td>46.8</td>
+                                    <td>43.8</td>
+                                    <td>34.3</td>
+                                    <td>46.4</td>
+                                    <td>54.3</td>
+                                    <td>32.9</td>
+                                </tr>
+                                <tr>
+                                    <td>VIEScore [Ku et al., 2023]</td>
+                                    <td>GPT4-Vision</td>
+                                    <td>–</td>
+                                    <td>40.8</td>
+                                    <td>39.3</td>
+                                    <td>34.5</td>
+                                    <td>40.0</td>
+                                    <td>34.3</td>
+                                    <td>32.9</td>
+                                </tr>
+                                <tr>
+                                    <td>GPT4V-Eval [Zhang et al., 2023]</td>
+                                    <td>GPT4-Vision</td>
+                                    <td>–</td>
+                                    <td>44.5</td>
+                                    <td>49.0</td>
+                                    <td>36.3</td>
+                                    <td>42.9</td>
+                                    <td>40.0</td>
+                                    <td>35.0</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9" class="center"><strong>Visual Programming (VP)</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>VisProg [Gupta & Kembhavi, 2023]</td>
+                                    <td>ViLT, OWL-ViT</td>
+                                    <td>ChatGPT</td>
+                                    <td>3.5</td>
+                                    <td>3.5</td>
+                                    <td>3.5</td>
+                                    <td>7.9</td>
+                                    <td>7.9</td>
+                                    <td>7.9</td>
+                                </tr>
+                                <tr>
+                                    <td>ViperGPT [Suris et al., 2023]</td>
+                                    <td>CLIP, BLIP, GLIP</td>
+                                    <td>ChatGPT</td>
+                                    <td>7.8</td>
+                                    <td>7.8</td>
+                                    <td>7.8</td>
+                                    <td>14.9</td>
+                                    <td>7.7</td>
+                                    <td>7.7</td>
+                                </tr>
+                                <tr>
+                                    <td>VPEval [Cho et al., 2023]</td>
+                                    <td>BLIPv2, GroundDINO</td>
+                                    <td>ChatGPT</td>
+                                    <td>12.8</td>
+                                    <td>11.0</td>
+                                    <td>6.3</td>
+                                    <td>34.3</td>
+                                    <td>25.7</td>
+                                    <td>21.4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <!-- Importing Materialize JavaScript from a CDN -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                </div>
+                <div class="col s2 m2 l2"></div>
+               </div>
