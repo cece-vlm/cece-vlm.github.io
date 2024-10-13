@@ -99,10 +99,25 @@
 
         <br><br>
         <div class="row full-width-row center">
-            <video class="responsive-video" playsinline="" autoplay="1" muted="" width="95%">
-                <source src="cece_trailer.mp4" type="video/mp4">
-            </video>
+            <a class="modal-trigger" href="#videoModal">
+                <video class="responsive-video" playsinline="" autoplay="1" muted="" width="95%">
+                    <source src="cece_trailer.mp4" type="video/mp4">
+                </video>
+            </a>
         </div>
+        <!-- Modal Structure -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <!-- <h4>Enlarged Video</h4> -->
+                <video class="responsive-video" controls autoplay muted>
+                    <source src="cece_trailer.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
 
         <div class="section">
             <div class="container">
@@ -140,7 +155,7 @@
                <div class="row">
                 <div class="col s12">
                     <h5 class="center"><b>Overview</b></h5><br>
-                    <h6>
+                    <p>
                         Caption Expansion with Contradictions and Entailments (<span class="small-caps">Cece</span>) leverages Natural Language Inference (NLI) to improve
                         the compositional capabilities of VLMs. 
                         We instruct an LLM to generate entailments 
@@ -149,10 +164,21 @@
                          A VLM is then used to compute the likelihood of the captions
                         generated via entailments and contradictions. The scores are finally balanced along with the original
                         image-text results to avoid semantic drift and enable better alignment.
-                        <br><br>
+                        <br><br></p>
                     <p class="center">
-                        <img class="responsive-img" src="overview.png" width="100%">
+                        <a class="modal-trigger" href="#imageModal">
+                            <img class="responsive-img" src="overview.png" width="100%">
+                        </a>
                     </p>
+                </div>
+                <div id="imageModal" class="modal">
+                    <div class="modal-content">
+                        <!-- <h4>Enlarged Image</h4> -->
+                        <img class="responsive-img" src="overview.png" alt="Enlarged Image">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
                 </div>
                 <!-- <div class="col s2 m2 l2"></div>
                 <div class="col s8 m8 l8">
@@ -168,14 +194,14 @@
                 <div class="col s12">
                     <h5 class="center"><b>Results</b></h5><br>
                     <!-- <div class="col s10 offset-s1"> -->
-                        <h6>We evaluate our approach on two <u>compositional benchmarks</u>: 
+                        <p>We evaluate our approach on two <u>compositional benchmarks</u>: 
                             <i>Winoground</i> and <i>EqBen</i>. 
                             These are remarkably hard due to
                             multi-hop evaluation that includes understanding the
                             semantics of the images and text 
                             after altering their <b>objects</b>, <b>attributes</b>, and <b>relationships</b>. 
                             <!-- Typically, the sentences change their word order. -->
-                            These results highlight the performance of our method <u>without finetuning</u>.</h6>
+                            These results highlight the performance of our method <u>without finetuning</u>.</p>
                     <!-- </div> -->
                     <p class="center">
                         <img class="responsive-img" src="table1_res.png" width="100%">
@@ -187,8 +213,8 @@
                <div class="row">
                 <div class="col s12">
                     <!-- <div class="col s10 offset-s1"> -->
-                        <h6>We also evaluate our approach on benchmarks that <b>score agreement</b> with <b>human judgments</b> of alignment
-                            for image-text alignment.</h6>
+                        <p>We also evaluate our approach on benchmarks that <b>score agreement</b> with <b>human judgments</b> of alignment
+                            for image-text alignment.</p>
                     <!-- </div> -->
                     <p class="center">
                         <img class="responsive-img" src="table2_res.png" width="100%">
@@ -230,6 +256,14 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize modal
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
     
 
 
