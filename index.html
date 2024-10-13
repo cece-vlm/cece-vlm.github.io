@@ -57,6 +57,16 @@
         }
     }
 
+    /* Allow the video row to span full width */
+    .full-width-row {
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            width: 100vw;
+        }
+
 </style>
 </head>
 <body class="section">
@@ -88,8 +98,8 @@
         </div>
 
         <br><br>
-        <div class="center">
-            <video class="responsive-video" playsinline="" autoplay="1" muted="" width="90%">
+        <div class="row full-width-row center">
+            <video class="responsive-video" playsinline="" autoplay="1" muted="" width="95%">
                 <source src="cece_trailer.mp4" type="video/mp4">
             </video>
         </div>
